@@ -1,16 +1,16 @@
 pipeline {
   environment {
-    calculator_image = 'yxos/calculator'
+    calculator_image = 'tp-devops/calculator'
     
-    sum_image = 'yxos/sum'
-    sub_image = 'yxos/sub'
-    mul_image = 'yxos/mul'
-    div_image = 'yxos/div'
-    sum_link = 'https://github.com/AnonymousWhizzer/Sum_service.git'
-    sub_link = 'https://github.com/AnonymousWhizzer/Sub_service.git'
-    mul_link = 'https://github.com/AnonymousWhizzer/Mul_service.git'
-    div_link = 'https://github.com/AnonymousWhizzer/Div_service.git'
-    calculator_link = 'https://github.com/AnonymousWhizzer/Calculator_service.git'
+    sum_image = 'tp-devops/sum'
+    sub_image = 'tp-devops/sub'
+    mul_image = 'tp-devops/mul'
+    div_image = 'tp-devops/div'
+    sum_link = 'https://github.com/matthiasgreen/Sum_service.git'
+    sub_link = 'https://github.com/matthiasgreen/Sub_service.git'
+    mul_link = 'https://github.com/matthiasgreen/Mul_service.git'
+    div_link = 'https://github.com/matthiasgreen/Div_service.git'
+    calculator_link = 'https://github.com/matthiasgreen/Calculator_service.git'
     dockerImage = ""
     registryCredential = 'repo_login'
   
