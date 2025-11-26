@@ -1,21 +1,21 @@
 pipeline {
   environment {
-    calculator_image = 'tp-devops/calculator'
+    calculator_image = 'matthiasgreen/calculator'
     
-    sum_image = 'tp-devops/sum'
-    sub_image = 'tp-devops/sub'
-    mul_image = 'tp-devops/mul'
-    div_image = 'tp-devops/div'
+    sum_image = 'matthiasgreen/sum'
+    sub_image = 'matthiasgreen/sub'
+    mul_image = 'matthiasgreen/mul'
+    div_image = 'matthiasgreen/div'
     sum_link = 'https://github.com/matthiasgreen/Sum_service.git'
     sub_link = 'https://github.com/matthiasgreen/Sub_service.git'
     mul_link = 'https://github.com/matthiasgreen/Mul_service.git'
     div_link = 'https://github.com/matthiasgreen/Div_service.git'
     calculator_link = 'https://github.com/matthiasgreen/Calculator_service.git'
     dockerImage = ""
-    registryCredential = 'repo_login'
+    registryCredential = 'tp-devops'
   
     //provide this line with one of your worker floating IP
-    build_arg="--build-arg HIS_IP='<worker_floating_ip>' ."
+    build_arg="--build-arg HIS_IP='192.168.37.23' ."
   }
 
   agent any
@@ -143,7 +143,7 @@ pipeline {
     stage('Deploying App to Kubernetes') {
       steps {
         script {
-          kubernetesDeploy(configs: "services_deployment.yml", kubeconfigId: "kubernetes")
+          kubernetesDeploy(configs: "services_deployment.yml", kubeconfigId: "Kubernetes")
         }
       }
     }
