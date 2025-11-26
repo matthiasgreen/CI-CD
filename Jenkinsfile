@@ -6,11 +6,11 @@ pipeline {
     sub_image = 'yxos/sub'
     mul_image = 'yxos/mul'
     div_image = 'yxos/div'
-    sum_link = 'https://github.com/ced-yxos/Sum_service.git'
-    sub_link = 'https://github.com/ced-yxos/Sub_service.git'
-    mul_link = 'https://github.com/ced-yxos/Mul_service.git'
-    div_link = 'https://github.com/ced-yxos/Div_service.git'
-    calculator_link = 'https://github.com/ced-yxos/Calculator_service.git'
+    sum_link = 'https://github.com/AnonymousWhizzer/Sum_service.git'
+    sub_link = 'https://github.com/AnonymousWhizzer/Sub_service.git'
+    mul_link = 'https://github.com/AnonymousWhizzer/Mul_service.git'
+    div_link = 'https://github.com/AnonymousWhizzer/Div_service.git'
+    calculator_link = 'https://github.com/AnonymousWhizzer/Calculator_service.git'
     dockerImage = ""
     registryCredential = 'repo_login'
   
